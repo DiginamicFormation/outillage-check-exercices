@@ -99,7 +99,7 @@ public class ExerciceRunner extends BlockJUnit4ClassRunner  {
 
 	protected final Optional<Failure> checkCode(Description description, String exerciceName, int question) {
 		
-		String className = "outils.checkers."+getTestClass().getJavaClass().getSimpleName()+"Checker";
+		String className = "fr.diginamic.check.approcheimp."+getTestClass().getJavaClass().getSimpleName()+"Checker";
 		String methodName = "check"+question;
 		try {
 			Object testClassInstance = getTestClass().getOnlyConstructor().newInstance();
@@ -130,7 +130,7 @@ public class ExerciceRunner extends BlockJUnit4ClassRunner  {
 	}
 	
 	public AbstractChecker getChecker() throws ReflectiveOperationException {
-		String className = "outils.checkers."+exoName+"Checker";
+		String className = "fr.diginamic.check.approcheimp."+exoName+"Checker";
 		
 		Class<?> checkerClass = Class.forName(className);
 		Object checkerInstance = checkerClass.getConstructor().newInstance();
