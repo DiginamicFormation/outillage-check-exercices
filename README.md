@@ -2,7 +2,7 @@
 Sur son compte créer un personel access token de type classic
 # Etape 2
 
-Dans C:/Users/MonNom/.m2 créer un fichier settings.xml 
+Dans C:/Users/MonNom/.m2 créer un fichier **settings.xml** et insérer les informations suivantes : 
 ```xml
   <profiles>
     <profile>
@@ -26,11 +26,13 @@ Dans C:/Users/MonNom/.m2 créer un fichier settings.xml
   <servers>
     <server>
         <id>outillage-check-exercices</id>
-        <username>monUser</username>
-        <password>monClassicToken</password>
+        <username>**monUser**</username>
+        <password>**monClassicToken**</password>
     </server>
   </servers>
 ```
+
+Attention, remplacez **monUser** par votre user GitHub et **monClassicToken** par la valeur de votre token.
 
 # Etape 3
 Commande de publication du package : 
